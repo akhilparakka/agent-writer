@@ -1,0 +1,30 @@
+# Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# LangGraph generated files
+.langgraph_api/
+.langgraph_api/*
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment files
+.env
+*.env
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Miscellaneous
+*.log
+*.bak
+*.tmp

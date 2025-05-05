@@ -1,0 +1,13 @@
+[project]
+name = "writer"
+version = "0.1.0"
+dependencies = [
+    "langgraph",
+    "langchain-core",
+    "langchain-openai",
+    "python-dotenv",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
