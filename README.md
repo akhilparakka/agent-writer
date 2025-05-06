@@ -56,8 +56,8 @@ cd writer
 ### Create a Conda environment:
 
 ```bash
-conda create -n luma-agent python=3.11
-conda activate luma-agent
+conda create -n writer-agent python=3.11
+conda activate writer-agent
 ```
 
 ### Install dependencies:
