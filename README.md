@@ -1,4 +1,4 @@
-# LangGraph Writing Assistant
+# TextWeaver
 
 ## Overview
 
