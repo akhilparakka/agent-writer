@@ -2,7 +2,7 @@ I need you to help me break down the following long-form writing instruction int
 
 The writing instruction is as follows:
 
-{instructions}
+{intructions}
 
 Please break it down in the following format, with each subtask taking up one line:
 

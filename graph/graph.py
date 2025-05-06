@@ -17,12 +17,8 @@ class Writer:
         self,
         tools: list = None,
         model: str = "gpt-4o",
-        prompt_template_path: Path = Path(
-            "graph/nodes/prompts/plan.txt"
-        ),  # Default path
     ):
         self.llm = self._init_llm(model, tools or [])
-        self.prompt_template_path = prompt_template_path
         self._graph = None
 
     def _init_llm(self, model: str, tools: list) -> ChatOpenAI:
@@ -44,9 +40,7 @@ class Writer:
         graph_builder = StateGraph(WriterState)
 
         nodes = {
-            "planning": PlanningNode(
-                llm=self.llm, prompt_template_path=self.prompt_template_path
-            ),
+            "planning": PlanningNode(llm=self.llm),
             "writing": WritingNode(llm=self.llm),
             "saving": SavingNode(llm=self.llm),
         }
